@@ -18,7 +18,10 @@ film2.save
 film3 = Film.new({ "title" => "Han Solo", "price" => 15})
 film3.save
 
-
+ticket1 = Ticket.new({ 'customer_id' => customer1.id, 'film_id' => film1.id})
+ticket1.save
+ticket2 = Ticket.new({ 'customer_id' => customer2.id, 'film_id' => film1.id})
+ticket2.save
 
 
 binding.pry
